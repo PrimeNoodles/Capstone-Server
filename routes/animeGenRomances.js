@@ -5,8 +5,7 @@ const axios = require('axios');
 
 //Getting romance genre anime
 router.get('/', (req, res) => {
-    //need to replace api with romance anime
-    const url = "https://api.jikan.moe/v3/top/anime/1/airing";
+    const url = "https://api.jikan.moe/v3/genre/anime/26/1";
     axios
         .get(url)
         .then((response) => {

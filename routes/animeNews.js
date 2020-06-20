@@ -5,8 +5,7 @@ const axios = require('axios');
 
 //Getting new airing anime
 router.get('/', (req, res) => {
-    //need to replace api with new airing
-    const url = "https://api.jikan.moe/v3/top/anime/1/airing";
+    const url = "https://api.jikan.moe/v3/top/anime/1/upcoming";
     axios
         .get(url)
         .then((response) => {

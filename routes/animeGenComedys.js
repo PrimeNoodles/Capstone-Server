@@ -5,8 +5,7 @@ const axios = require('axios');
 
 //Getting comedy genre anime
 router.get('/', (req, res) => {
-    //need to replace api with comedy anime
-    const url = "https://api.jikan.moe/v3/top/anime/1/airing";
+    const url = "https://api.jikan.moe/v3/genre/anime/4/1";
     axios
         .get(url)
         .then((response) => {
