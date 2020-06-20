@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+
 module.exports = new Sequelize('capstonedb', 'postgres', '123', {
     host: 'localhost',
     dialect: 'postgres',
